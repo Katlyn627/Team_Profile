@@ -1,20 +1,8 @@
-// Created packages for this application
-const inquirer = require('inquirer');
-const fs = require('fs');
-const generateHTML = require('./utils/generateHTML');
+// Created link to generate html page
+const generateHTML = require('./src/generateHTML.');
 
-// Created a function to write date to the README file
-
-function writeToFile(fileName, data) {
-    fs.writeFileSync(`${fileName}.html`, data,(err) => {
-        if (err) throw err;
-        console.log('Team Profile Created');
-      }) 
-}
-
-// Create async function to initialize app and get inquirer prompts and answers
-
-async function init() {const Manager = require('./lib/Manager');
+// Created variables to link library to cards
+const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
 
@@ -90,7 +78,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: "What is employees github username?",
+            message: "What is employees guthub username?",
         },
         {
             type: 'input',
@@ -158,7 +146,3 @@ addManager()
   .catch(err => {
  console.log(err);
   });
-}
-
-// Function call to initialize application
-init();

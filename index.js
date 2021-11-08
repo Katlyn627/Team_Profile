@@ -1,5 +1,5 @@
 // Created link to generate html page
-const generateHTML = require('./src/generateHTML');
+const generateHTML = require('./utils/generateHTML');
 
 // Created variables to link library to cards
 const Manager = require('./lib/Manager');
@@ -75,7 +75,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: "What is employees guthub username?",
+            message: "What is employees github username?",
         },
         {
             type: 'input',
@@ -118,7 +118,7 @@ const addEmployee = () => {
 };
 // Create function to write file and push to index HTML page
 const writeFile = data => {
-    fs.writeFile('indx\index.html', data, err => {
+    fs.writeFile('src/index.html', data, err => {
         // if there is an error 
         if (err) {
             console.log(err);

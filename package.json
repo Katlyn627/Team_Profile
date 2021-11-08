@@ -1,0 +1,23 @@
+{
+  "name": "team_profile_gen",
+  "version": "1.0.0",
+  "description": "Create a Team Profile Generator Page using Node.js and tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katlyn627/Team_Profile_Gen.git"
+  },
+  "keywords": [
+    "Team",
+    "Profile"
+  ],
+  "author": "Katlyn Boches",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katlyn627/Team_Profile_Gen/issues"
+  },
+  "homepage": "https://github.com/Katlyn627/Team_Profile_Gen#readme"
+}

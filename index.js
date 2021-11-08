@@ -1,5 +1,5 @@
 // Created link to generate html page
-const generateHTML = require('./src/generateHTML.');
+const generateHTML = require('./src/generateHTML');
 
 // Created variables to link library to cards
 const Manager = require('./lib/Manager');
@@ -14,12 +14,12 @@ const inquirer = require('inquirer');
 const teamArray = []; 
 
 // Created manager Prompts
-const addManager = () => {
-    return inquirer.prompt ([
+const addManager = async () => {
+    const managerInput = await inquirer.prompt([
         {
             type: 'input',
             name: 'name',
-            message: 'Who is the manager of this team?', 
+            message: 'Who is the manager of this team?',
         },
         {
             type: 'input',
@@ -36,14 +36,11 @@ const addManager = () => {
             name: 'officeNumber',
             message: "What is the managers office number?",
         }
-    ])
-    .then(managerInput => {
-        const  { name, id, email, officeNumber } = managerInput; 
-        const manager = new Manager (name, id, email, officeNumber);
-
-        teamArray.push(manager); 
-        console.log(manager); 
-    })
+    ]);
+    const { name, id, email, officeNumber } = managerInput;
+    const manager = new Manager(name, id, email, officeNumber);
+    teamArray.push(manager);
+    console.log(manager);
 };
 
 const addEmployee = () => {

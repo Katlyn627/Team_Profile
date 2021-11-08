@@ -128,4 +128,5 @@ function generateHTML(data) {
     </html>
   `;
   }
-  
+
+  module.exports = generateHTML;

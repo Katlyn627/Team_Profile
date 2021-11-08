@@ -21,7 +21,7 @@ async function init() {
             type: 'list',
             message: 'What is the role of this team member?',
             name: 'role',
-            choice:[
+            choices:[
                 "Manager",
                 "Engineer",
                 "Intern"
@@ -44,7 +44,7 @@ async function init() {
         }
     ]).then((answers) => {
 console.log(answers);
-writeToFile(("index.html"),(generateHTML(answers)));
+writeToFile(("GenerateHTML"),(generateHTML(answers)));
 })
 } 
 

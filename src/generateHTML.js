@@ -1,5 +1,5 @@
-// create Manager card
-const generateManager = function (manager) {
+function generateHTML(data){
+    console.log(data);
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">

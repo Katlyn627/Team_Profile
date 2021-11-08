@@ -18,24 +18,29 @@ async function init() {
     // let answers = await userInput();
     inquirer.prompt([
         {
-            type: 'input',
-            name: 'name',
-            message: 'What is the role of this team member?', 
+            type: 'list',
+            message: 'What is the role of this team member?',
+            name: 'role',
+            choice:[
+                "Manager",
+                "Engineer",
+                "Intern"
+            ]  
         },
         {
             type: 'input',
-            name: 'id',
-            message: "What is the managers ID number?",
+            message: "What is the employee's ID number?",
+            name: 'id',   
         },
         {
             type: 'input',
-            name: 'email',
-            message: "What is the managers email address?",
+            message: "What is the employees email address?",
+            name: 'email', 
         },
         {
             type: 'input',
-            name: 'officeNumber',
             message: "What is the managers office number?",
+            name: 'officeNumber',            
         }
     ]).then((answers) => {
 console.log(answers);

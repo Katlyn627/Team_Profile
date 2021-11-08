@@ -1,5 +1,5 @@
 // Created link to generate html page
-const generateHTML = require('./generateHTML');
+const generateHTML = require('./src/generateHTML');
 
 // Created variables to link library to cards
 const Manager = require('./lib/Manager');

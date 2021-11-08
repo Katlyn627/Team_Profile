@@ -3,6 +3,13 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateHTML = require('./utils/generateHTML');
 
+// Created variables to link library data to cards
+
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern'); 
+
+
 // Created a function to write date to the README file
 
 function writeToFile(fileName, data) {

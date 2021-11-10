@@ -4,6 +4,7 @@
 
 ## **Video Walkthrough of Project**
 
+![Team_Profile gif](https://user-images.githubusercontent.com/86095070/141207655-88531d0c-ef59-4a19-b71d-5377920f4cda.gif)
 
 
 ## **Description**

@@ -41,7 +41,7 @@ function generateHTML(data) {
             <div class="card h-100">
                 <div class="card-header">
                     <h3>${manager.name}</h3>
-                    <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                    <h4>Manager</h4><i class="fas fa-mug-hot"></i>
                 </div>
                 <div class="card-body">
                     <p class="id">ID: ${manager.id}</p>
@@ -60,7 +60,7 @@ function generateHTML(data) {
           <div class="card h-100">
               <div class="card-header">
                   <h3>${engineer.name}</h3>
-                  <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                  <h4>Engineer</h4><i class="fas fa-laptop"></i>
               </div>
               <div class="card-body">
                   <p class="id">ID: ${engineer.id}</p>
@@ -79,7 +79,7 @@ function generateHTML(data) {
           <div class="card h-100">
               <div class="card-header">
                   <h3>${intern.name}</h3>
-                  <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                  <h4>Intern</h4><i class="fas fa-user-graduate"></i>
               </div>
               <div class="card-body">
                   <p class="id">ID: ${intern.id}</p>
@@ -142,10 +142,8 @@ function generateHTML(data) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/dc872b6565.js" crossorigin="anonymous"></script>
         <title>My Team</title>
         </head>
     <body>
@@ -162,7 +160,7 @@ function generateHTML(data) {
                 </div>
             </div>
         </main>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
     </html>
   `;

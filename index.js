@@ -4,7 +4,8 @@ const generateHTML = require('./src/generateHTML');
 // Created variables to link library to cards
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern'); 
+const Intern = require('./lib/Intern');
+const employee = require('./lib/Employee');
 
 // Created fs and iquirer variables
 const fs = require('fs'); 

@@ -62,7 +62,7 @@ function generateHTML(data) {
       pageArray = []; 
   
       for (let i = 0; i < data.length; i++) {
-          const Employee = data[i];
+          const employee = data[i];
           const role = employee.getRole(); 
   
   

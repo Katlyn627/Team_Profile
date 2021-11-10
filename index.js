@@ -143,7 +143,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: "What is your Github user name?.",
+            message: "What is your Github user name?",
             // Validated correct data was entered
             when: (input) => input.role === "Engineer",
             validate: nameInput => {
@@ -157,7 +157,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'school',
-            message: "What school are did you or are you currently attending?",
+            message: "What school did you or are you currently attending?",
             // Validated correct data was entered
             when: (input) => input.role === "Intern",
             validate: nameInput => {

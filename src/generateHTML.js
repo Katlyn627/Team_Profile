@@ -45,7 +45,7 @@ function generateHTML(data) {
                 </div>
                 <div class="card-body">
                     <p class="id">ID: ${manager.id}</p>
-                    <p class="email">Email: <a href="mailto:${manager.email}">${engineer.email}</a></p>
+                    <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                     <p class="github">Github: <a href="https://github.com/${manager.github}">${manager.github}</a></p>
                 </div>
             </div>
@@ -54,7 +54,7 @@ function generateHTML(data) {
     };  
   
   // Created Engineer card for HTML page
-  const generateEngineer = function (employee) {
+  const generateEngineer = function (engineer) {
       return `
       <div class="col-4 mt-4">
           <div class="card h-100">
@@ -142,9 +142,12 @@ function generateHTML(data) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>My Team</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        </head>
     <body>
         <header>
             <nav class="navbar" id="navbar">

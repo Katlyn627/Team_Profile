@@ -84,11 +84,7 @@ const addManager = () => {
 };
 // Created inquirer to add employees to team
 const addEmployee = () => {
-    console.log(`
-    =================
-    Adding employees to the team
-    =================
-    `);
+    console.log(`Would you like to add employees to this team?`);
 
     return inquirer.prompt ([
         {

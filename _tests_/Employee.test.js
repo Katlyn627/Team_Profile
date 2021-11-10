@@ -3,7 +3,7 @@ const Employee = require('../lib/Employee');
 
 // Create employee object
 test('creates an employee object', () => {
-    const employee = new Employee('Katlyn', 90, 'katlynboches@gmail.com');
+    const employee = new Employee('name', 90, 'email');
 
     expect(employee.name).toEqual(expect.any(String));
     expect(employee.id).toEqual(expect.any(Number));
@@ -12,28 +12,28 @@ test('creates an employee object', () => {
 
 // Tests Id from getId()
 test('gets employee name', () => {
-    const employee = new Employee('Katlyn', 90, 'katlynboches@gmail.com');
+    const employee = new Employee('name', 90, 'email');
 
     expect(employee.getName()).toEqual(expect.any(String));
 });
 
 // gets id from getId() 
 test('gets employee ID', () => {
-    const employee = new Employee('Katlyn', 90, 'katlynboches@gmail.com');
+    const employee = new Employee('name', 90, 'email');
 
     expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 // gets emails from getEmail()
 test('gets employee email', () => {
-    const employee = new Employee('Katlyn', 90, 'katlynboches@gmail.com');
+    const employee = new Employee('name', 90, 'email');
 
     expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
 });
 
 // gets role from getRole()
 test('gets role of employee', () => {
-    const employee = new Employee('Katlyn', 90, 'katlynboches@gmail.com');
+    const employee = new Employee('name', 90, 'email');
 
     expect(employee.getRole()).toEqual("Employee");
 }); 

@@ -15,10 +15,46 @@ function generateHTML(data) {
           </div>
       </div>
       `;
-  }
+  };
+  // Created Employee card for HTML page
+  const generateEmployee = function (employee) {
+    return `
+    <div class="col-4 mt-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h3>${employee.name}</h3>
+                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+            </div>
+            <div class="card-body">
+                <p class="id">ID: ${employee.id}</p>
+                <p class="email">Email: <a href="mailto:${employee.email}">${employee.email}</a></p>
+                <p class="github">Github: <a href="https://github.com/${employee.github}">${employee.github}</a></p>
+            </div>
+        </div>
+    </div>
+    `
+};  
+    // Created Manager card for HTML page
+    const generateManager = function (manager) {
+        return `
+        <div class="col-4 mt-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h3>${manager.name}</h3>
+                    <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                </div>
+                <div class="card-body">
+                    <p class="id">ID: ${manager.id}</p>
+                    <p class="email">Email: <a href="mailto:${manager.email}">${engineer.email}</a></p>
+                    <p class="github">Github: <a href="https://github.com/${manager.github}">${manager.github}</a></p>
+                </div>
+            </div>
+        </div>
+        `
+    };  
   
-  // Created engineer card for HTML page
-  const generateEngineer = function (engineer) {
+  // Created Engineer card for HTML page
+  const generateEngineer = function (employee) {
       return `
       <div class="col-4 mt-4">
           <div class="card h-100">
@@ -34,7 +70,7 @@ function generateHTML(data) {
           </div>
       </div>
       `
-  }
+  };
   
   // Created intern card for HTML page 
   const generateIntern = function (intern) {
